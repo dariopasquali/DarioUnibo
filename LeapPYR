@@ -1,0 +1,70 @@
+	function concatData(id, data) {
+      return id + ": " + data + "\n\n";
+    }
+
+    function getRoll(hand) {
+
+		var rad = Math.atan2(hand.palmNormal[0], -hand.palmNormal[1]);
+
+  		return 360*rad/(2*Math.PI);
+	}
+
+	function getYaw(hand) {
+
+  		var rad = Math.atan2(hand.direction[0], -hand.direction[2]);
+
+  		return 360*rad/(2*Math.PI);
+	}
+        
+    function getPitch(hand) {
+    	
+    	var rad = Math.atan2(hand.direction[1], - hand.direction[2]);
+
+    	return 360*rad/(2*Math.PI);
+    }
+
+
+    /*function concatJointPosition(id, position) {
+      return id + ": " + position[0] + ", " + position[1] + ", " + position[2];
+    }*/
+    
+
+    
+    var frameString = "", handString = "", fingerString = "";
+    var hand, finger;
+    
+    // Leap.loop uses browser's requestAnimationFrame
+    var options = { enableGestures: true };
+    
+    // Main Leap Loop
+    var Leap = require('leapjs');
+
+    Leap.loop(options, function(frame) {
+      frameString = concatData("frame_id", frame.id);
+      frameString += concatData("\nnum_hands", frame.hands.length);
+      frameString += "\n\n";
+    
+      // Showcase some new V2 features
+      for (var i = 0, len = frame.hands.length; i < len; i++) {
+        hand = frame.hands[i];
+        handString = concatData("Tipo Mano", hand.type);
+
+        handString += concatData("Pitch", getPitch(hand));	// OK
+
+        handString += concatData("Roll", getRoll(hand));	// OK
+
+        handString += concatData("Yaw", getYaw(hand));		// OK
+    
+        handString += '\n\n';
+               
+        frameString += handString;
+        //frameString += fingerString;
+      }
+    
+
+    var util = require('util');
+	util.print("\u001b[2J\u001b[0;0H"); // cls e riporta a (0,0)
+	util.print(frameString);
+      
+    
+    });
