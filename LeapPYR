@@ -1,11 +1,4 @@
-    /*
-    	the program print on the console
-    	Pitch, Yaw and Roll
-    	of both hands wiewed by the leap motion
-    */
-    
-    
-    function concatData(id, data) {
+	function concatData(id, data) {
       return id + ": " + data + "\n\n";
     }
 
