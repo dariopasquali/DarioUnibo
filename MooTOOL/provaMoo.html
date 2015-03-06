@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools.js">
+		</script>
+		<script type="text/javascript" src="Moousture.js"></script>
+ 		<script type="text/javascript" src="notimoo-v1.1.js"></script>
+
+		<script type="text/javascript">
+
+			 var displayedHide = false;
+
+			  function ccwCircle(error) {
+			      //console.log("Circle: ", error);
+			      if (error > 1)
+			          return;
+
+
+			       var pos = probe.probe();
+
+			    console.log("Cerchio");			     
+			      
+			    /*monitor.stop();
+			      
+			      	      
+			      
+			      if (!displayedHide) // Showing a simple notification
+			          notimooManager.show({
+			              title: 'To hide menu',
+			              sticky: true,
+			              message: 'To hide the menu use the shake gesture (left, right, left, right) <br /> <img src="./images/hide-tip.png" height="75" width="150" alt="" /> <br/>'
+			          });
+			      displayedHide = true;*/
+			      //startgMonitor.delay(1000);
+			  }
+
+
+			  function swipeMouse(error) {
+			      //if(console && console.log) console.log("Shake: ", error);
+			      if (error >= 1)
+			          return;
+
+			    console.log("ZigZag");	
+
+			    //  startgMonitor();
+			  }
+
+			  function right(error)
+			  {
+			  	if(error>=1)
+			  		return;
+			  	console.log("Destra");
+			  }
+
+			  var monitor = null;
+			  var probe = null;
+			  var recorder = null;
+			  var notimooManager = null;
+
+			  function startgMonitor() 
+			  {
+			      monitor.start(probe, recorder);
+			  }
+
+			  function domReadyHook() {
+			      gstr = new Moousture.ReducedLevenMatcher();
+			      probe = new Moousture.MouseProbe($(document));
+			      
+			      recorder = new Moousture.Recorder({maxSteps: 50,minSteps: 8,matcher: gstr});
+			      monitor = new Moousture.Monitor(10, 1);
+
+			      //CCW circle motion vectors
+			      gstr.addGesture([5, 4, 3, 2, 1, 0, 7, 6], ccwCircle);
+			      gstr.addGesture([7, 0, 1, 2, 3, 4, 5, 6], ccwCircle);
+			      //Zig zag swipe vectors
+			      gstr.addGesture([4, 0, 4, 0], swipeMouse);
+
+			      //destra
+			      gstr.addGesture([0,0,0,0], right)
+			      
+			      
+			      monitor.start(probe, recorder);
+			      
+			      
+			      notimooManager = new Notimoo({width: '200px',locationVType: 'top'});
+			  }
+			  window.addEvent('domready', domReadyHook);
+		</script>
+	</head>
+
+	<body>
+		<p>
+			Paragrafo di prova che non serve a un ****
+		</p>	
+	</body>
+
+
+</html>
