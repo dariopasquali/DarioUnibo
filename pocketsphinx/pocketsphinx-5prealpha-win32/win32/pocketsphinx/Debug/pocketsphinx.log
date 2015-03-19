@@ -1,0 +1,120 @@
+﻿Build started 17/03/2015 13:55:43.
+     1>Project "C:\Users\Gabri\Desktop\Sphinx\pocketsphinx-5prealpha-win32\win32\pocketsphinx\pocketsphinx.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../../include /I../../src/libpocketsphinx /I../../../sphinxbase/include /I../../../sphinxbase/include/win32 /ZI /nologo /W3 /WX- /Od /Oy- /D _DEBUG /D _USRDLL /D POCKETSPHINX_EXPORTS /D HAVE_CONFIG_H /D _CRT_SECURE_NO_DEPRECATE /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\libpocketsphinx\acmod.c ..\..\src\libpocketsphinx\allphone_search.c ..\..\src\libpocketsphinx\bin_mdef.c ..\..\src\libpocketsphinx\blkarray_list.c ..\..\src\libpocketsphinx\dict.c ..\..\src\libpocketsphinx\dict2pid.c ..\..\src\libpocketsphinx\fsg_history.c ..\..\src\libpocketsphinx\fsg_lextree.c ..\..\src\libpocketsphinx\fsg_search.c ..\..\src\libpocketsphinx\hmm.c ..\..\src\libpocketsphinx\kws_detections.c ..\..\src\libpocketsphinx\kws_search.c ..\..\src\libpocketsphinx\mdef.c ..\..\src\libpocketsphinx\ms_gauden.c ..\..\src\libpocketsphinx\ms_mgau.c ..\..\src\libpocketsphinx\ms_senone.c ..\..\src\libpocketsphinx\ngram_search.c ..\..\src\libpocketsphinx\ngram_search_fwdflat.c ..\..\src\libpocketsphinx\ngram_search_fwdtree.c ..\..\src\libpocketsphinx\phone_loop_search.c ..\..\src\libpocketsphinx\pocketsphinx.c ..\..\src\libpocketsphinx\ps_lattice.c ..\..\src\libpocketsphinx\ps_mllr.c ..\..\src\libpocketsphinx\ptm_mgau.c ..\..\src\libpocketsphinx\s2_semi_mgau.c ..\..\src\libpocketsphinx\tmat.c ..\..\src\libpocketsphinx\vector.c
+         vector.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\vector.c(102): warning C4244: '*=' : conversion from 'float64' to 'float32', possible loss of data
+         tmat.c
+         s2_semi_mgau.c
+         ptm_mgau.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ptm_mgau.c(841): warning C4244: '=' : conversion from 'int16' to 'uint8', possible loss of data
+         ps_mllr.c
+         ps_lattice.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(452): warning C4244: 'initializing' : conversion from 'float64' to 'float32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1248): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1291): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1325): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1328): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1378): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1400): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1437): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1507): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1514): warning C4244: 'function' : conversion from 'float32' to 'int', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1597): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1682): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1688): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ps_lattice.c(1759): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+         pocketsphinx.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\pocketsphinx.c(286): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\pocketsphinx.c(306): warning C4244: 'function' : conversion from 'int32' to 'float32', possible loss of data
+         phone_loop_search.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\phone_loop_search.c(230): warning C4244: '=' : conversion from 'float64' to 'int32', possible loss of data
+         ngram_search_fwdtree.c
+         ngram_search_fwdflat.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ngram_search_fwdflat.c(709): warning C4244: '+=' : conversion from 'float32' to 'int32', possible loss of data
+         ngram_search.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ngram_search.c(94): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ngram_search.c(137): warning C4244: '=' : conversion from 'double' to 'float32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ngram_search.c(723): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ngram_search.c(1043): warning C4244: 'function' : conversion from 'double' to 'float32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ngram_search.c(1188): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ngram_search.c(1244): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         ms_senone.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_senone.c(118): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_senone.c(224): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_senone.c(225): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_senone.c(240): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_senone.c(314): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_senone.c(325): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_senone.c(371): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_senone.c(372): warning C4018: '<=' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_senone.c(376): warning C4018: '<' : signed/unsigned mismatch
+         ms_mgau.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_mgau.c(133): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_mgau.c(136): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_mgau.c(216): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\ms_mgau.c(224): warning C4018: '<' : signed/unsigned mismatch
+         ms_gauden.c
+         mdef.c
+         kws_search.c
+         kws_detections.c
+         hmm.c
+         fsg_search.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\fsg_search.c(214): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\fsg_search.c(223): warning C4244: '=' : conversion from 'double' to 'float32', possible loss of data
+         fsg_lextree.c
+         Generating Code...
+         Compiling...
+         fsg_history.c
+         dict2pid.c
+         dict.c
+         blkarray_list.c
+         bin_mdef.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\bin_mdef.c(148): warning C4244: '=' : conversion from 'int16' to 'uint8', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\bin_mdef.c(149): warning C4244: '=' : conversion from 'int16' to 'uint8', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\bin_mdef.c(150): warning C4244: '=' : conversion from 'int16' to 'uint8', possible loss of data
+         allphone_search.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\allphone_search.c(550): warning C4244: '=' : conversion from 'float32' to 'int32', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\allphone_search.c(609): warning C4244: '=' : conversion from 'double' to 'float32', possible loss of data
+         acmod.c
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\acmod.c(195): warning C4244: '=' : conversion from 'double' to 'mfcc_t', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\acmod.c(200): warning C4244: '=' : conversion from 'double' to 'mfcc_t', possible loss of data
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\acmod.c(514): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\acmod.c(525): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\gabri\desktop\sphinx\pocketsphinx-5prealpha-win32\src\libpocketsphinx\acmod.c(576): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../bin/Debug/pocketsphinx.dll" /NOLOGO /LIBPATH:..\..\..\sphinxbase\bin\Debug sphinxbase.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\bin\Debug/pocketsphinx.pdb" /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"..\..\bin\Debug/pocketsphinx.lib" /MACHINE:X86 /SAFESEH:NO /DLL .\Debug/acmod.obj
+         .\Debug/allphone_search.obj
+         .\Debug/bin_mdef.obj
+         .\Debug/blkarray_list.obj
+         .\Debug/dict.obj
+         .\Debug/dict2pid.obj
+         .\Debug/fsg_history.obj
+         .\Debug/fsg_lextree.obj
+         .\Debug/fsg_search.obj
+         .\Debug/hmm.obj
+         .\Debug/kws_detections.obj
+         .\Debug/kws_search.obj
+         .\Debug/mdef.obj
+         .\Debug/ms_gauden.obj
+         .\Debug/ms_mgau.obj
+         .\Debug/ms_senone.obj
+         .\Debug/ngram_search.obj
+         .\Debug/ngram_search_fwdflat.obj
+         .\Debug/ngram_search_fwdtree.obj
+         .\Debug/phone_loop_search.obj
+         .\Debug/pocketsphinx.obj
+         .\Debug/ps_lattice.obj
+         .\Debug/ps_mllr.obj
+         .\Debug/ptm_mgau.obj
+         .\Debug/s2_semi_mgau.obj
+         .\Debug/tmat.obj
+         .\Debug/vector.obj
+            Creating library ..\..\bin\Debug/pocketsphinx.lib and object ..\..\bin\Debug/pocketsphinx.exp
+         pocketsphinx.vcxproj -> C:\Users\Gabri\Desktop\Sphinx\pocketsphinx-5prealpha-win32\\bin\Debug\pocketsphinx.dll
+     1>Done Building Project "C:\Users\Gabri\Desktop\Sphinx\pocketsphinx-5prealpha-win32\win32\pocketsphinx\pocketsphinx.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.04
